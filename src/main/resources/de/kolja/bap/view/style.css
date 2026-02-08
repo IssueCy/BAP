@@ -1,0 +1,15 @@
+.link-button {
+    -fx-cursor: hand;
+}
+
+.top-button {
+    -fx-cursor: hand;
+}
+
+.red-button {
+    -fx-border-width: 2;
+    -fx-border-color: #ff6c6c;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+    -fx-cursor: hand;
+}

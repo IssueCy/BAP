@@ -13,6 +13,7 @@ public class Main extends Application {
 
         SceneManager.switchScene("login.fxml");
         stage.show();
+        stage.setMaximized(true);
     }
 
     public static void main(String[] args) {
