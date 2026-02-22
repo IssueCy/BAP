@@ -52,6 +52,11 @@ public class MainController {
 
     // Navigation logic
     @FXML
+    private void back() {
+        NavigationService.back();
+    }
+
+    @FXML
     private void goHome() {
         NavigationService.go("center_home.fxml");
     }
@@ -59,6 +64,10 @@ public class MainController {
     @FXML
     private void goAdmin() {
         NavigationService.go("center_admin.fxml");
+    }
+
+    @FXML private void goCreateNewCustomer() {
+        NavigationService.go("center_newCustomer.fxml");
     }
 
     @FXML

@@ -14,6 +14,7 @@ target/
 
 /out/
 /target
+/signatures
 
 ### Eclipse ###
 .apt_generated

@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane fx:id="root" prefHeight="500.0" prefWidth="1300.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.kolja.bap.controller.MainController">
+<BorderPane fx:id="root" prefHeight="500.0" prefWidth="1300.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.kolja.bap.controller.MainController">
 
     <!-- Sidebar -->
     <left>
@@ -58,7 +58,8 @@
                <children>
                   <HBox alignment="CENTER_LEFT" prefHeight="34.0" prefWidth="478.0" HBox.hgrow="ALWAYS">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" styleClass="top-button" text="Neuer Kunde">
+                        <Button mnemonicParsing="false" onAction="#back" text="⬅" />
+                        <Button mnemonicParsing="false" onAction="#goCreateNewCustomer" prefHeight="25.0" prefWidth="105.0" styleClass="top-button" text="Neuer Kunde">
                            <HBox.margin>
                               <Insets left="10.0" right="10.0" />
                            </HBox.margin>
@@ -96,7 +97,7 @@
                   </HBox>
                   <VBox alignment="CENTER" prefHeight="34.0" prefWidth="53.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="System: ✅ online" wrappingWidth="107.828125" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="System: server status" wrappingWidth="120.628173828125" />
                         <Label fx:id="dateLabel" prefHeight="17.0" prefWidth="138.0" text="date" />
                         <Label fx:id="timeLabel" prefHeight="17.0" prefWidth="149.0" text="time" />
                      </children>
